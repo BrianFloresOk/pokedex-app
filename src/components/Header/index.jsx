@@ -5,10 +5,10 @@ export function Header() {
     return(
         <header className={style.header}>
             <div className={style.title__container}>
-                <div>
-                    <img src={pokedex} alt=""/>
+                <div className='w-1/5 h-3/6'>
+                    <img src={pokedex} alt="pokedex"/>
                 </div>
-                <h1>Pokédex</h1>
+                <h1 className='text-4xl font-bold'>Pokédex</h1>
             </div>
         </header>
     )

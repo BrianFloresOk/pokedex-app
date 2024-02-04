@@ -1,5 +1,4 @@
 import { PokemonsProvider } from "./context/PokemonProvider";
-import 'bootstrap/dist/css/bootstrap.min.css';
 import Home from "./pages/Home";
 import { TypePokemonsProvider } from "./context/TypePokemonProvider";
 

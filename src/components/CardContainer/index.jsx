@@ -18,7 +18,7 @@ export function CardContainer() {
     }
 
     return (
-        <div className="d-flex justify-content-center flex-wrap gap-3">
+        <div className="flex justify-center flex-wrap gap-9 gap-y-12">
             {
                 pokemons.map((pokemon, index) => (
                     <Card key={index} pokemon={pokemon}/>

@@ -1,18 +1,14 @@
-import { Col, Form, Row } from "react-bootstrap";
-
 export function SearchForm() {
     return (
-        <div>
-            <Form className="my-4">
-                <Row className="justify-content-center">
-                    <Col md={4} className="d-flex align-items-center">
-                        <div className="input-group">
-                            <input type="text" className="form-control" placeholder="Buscar.." aria-label="Buscar.." aria-describedby="button-addon2" />
-                            <button className="btn btn-primary" type="button" id="button-addon2">Buscar</button>
-                        </div>
-                    </Col>
-                </Row>
-            </Form>
+        <div className="my-10">
+            <form>
+                <div className="my-6 w-1/2 mx-auto">
+                    <div className="w-10/12 mx-auto shadow-md">
+                        <input type="text" className="w-4/5 h-9 p-2 text-lg" placeholder="Buscar.." />
+                        <button className="text-lg w-1/5 p-2 text-cyan-50 bg-red-400 hover:bg-red-600 rounded-r-lg" type="button" id="button-add">Buscar</button>
+                    </div>
+                </div>
+            </form>
         </div>
 
     )
