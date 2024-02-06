@@ -10,19 +10,15 @@ const TypePokemonsProvider = ({ children }) => {
     const allTypes = async () => {
         try {
             const data = await allTypesPokemon();
-            console.log(data);
             setTypes(data);
         } catch (error) {
             setError("Ocurrió un error al cargar los Pokémon");
         }
     };
 
-    useEffect(() => {
-        allTypes();
-    }, []);
-
     const valuesData = {
-        types
+        types,
+        allTypes
     };
 
     return (
