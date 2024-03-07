@@ -19,6 +19,8 @@ const PokemonsProvider = ({ children }) => {
         }
     };
 
+    
+
     useEffect(() => {
         allPokemons();
     }, []);

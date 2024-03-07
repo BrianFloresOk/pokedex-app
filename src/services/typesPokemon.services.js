@@ -25,7 +25,7 @@ const getTypePokemon = async (namePokemon) => {
     try {
         const types = await allTypesPokemon()
         types.forEach(type => {
-            
+            return
         })
 
     } catch (error) {
