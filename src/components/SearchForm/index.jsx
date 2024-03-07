@@ -1,3 +1,5 @@
+import { FilterContent } from "../FilterContent";
+
 export function SearchForm() {
     return (
         <div className="my-10">
@@ -9,6 +11,7 @@ export function SearchForm() {
                     </div>
                 </div>
             </form>
+            <FilterContent />
         </div>
 
     )

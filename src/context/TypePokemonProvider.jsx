@@ -1,11 +1,12 @@
 import { createContext, useEffect, useState } from "react";
-import { allTypesPokemon } from '../services/typesPokemon.services';
+import { allTypesPokemon, typesEnEspaniol } from '../services/typesPokemon.services';
 
 const TypePokemonsContext = createContext();
 
 const TypePokemonsProvider = ({ children }) => {
     const [types, setTypes] = useState([]);
     const [error, setError] = useState(null);
+    const [tiposEsp, setTiposEsp] = useState([])
 
     const allTypes = async () => {
         try {
@@ -16,9 +17,29 @@ const TypePokemonsProvider = ({ children }) => {
         }
     };
 
+    const allTypesEspaniol = async () => {
+        function removerTildes(texto) {
+            return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
+        }
+
+        try {
+            const data = await typesEnEspaniol();
+            const tipos = data.map(item => removerTildes(item))
+            setTiposEsp(tipos);
+        } catch (error) {
+            setError("Ocurrió un error al cargar los Pokémon");
+        }
+    }
+
+    useEffect(() => {
+        allTypesEspaniol()
+    }, [])
+
     const valuesData = {
         types,
-        allTypes
+        tiposEsp,
+        allTypes,
+        allTypesEspaniol
     };
 
     return (
