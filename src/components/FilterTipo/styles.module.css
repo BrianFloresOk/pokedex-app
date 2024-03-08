@@ -1,181 +1,307 @@
-.normal {
+/* .normal-b {
     color: white;
     background-color: #a8a77a;
 }
 
-.lucha {
+.lucha-b {
     color: white;
     background-color: #c22e28;
 }
 
-.volador {
+.volador-b {
     color: white;
     background-color: #a98ff3;
 }
 
-.veneno {
+.veneno-b {
     color: white;
     background-color: #a33ea1;
 }
 
-.tierra {
+.tierra-b {
     color: white;
     background-color: #e2bf65;
 }
 
-.roca {
+.roca-b {
     color: white;
     background-color: #b6a136;
 }
 
-.bicho {
+.bicho-b {
     color: white;
     background-color: #a6b91a;
 }
 
-.fantasma {
+.fantasma-b {
     color: white;
     background-color: #735797;
 }
 
-.acero {
+.acero-b {
     color: white;
     background-color: #b7b7ce;
 }
 
-.fuego {
+.fuego-b {
     color: white;
     background-color: #ee8130;
 }
 
-.agua {
+.agua-b {
     color: white;
     background-color: #6390f0;
 }
 
-.planta {
+.planta-b {
     color: white;
     background-color: #7ac74c;
 }
 
-.electrico {
+.electrico-b {
     color: white;
     background-color: #f7d02c;
 }
 
-.psiquico {
+.psiquico-b {
     color: white;
     background-color: #f95587;
 }
 
-.hielo {
+.hielo-b {
     color: white;
     background-color: #96d9d6;
 }
 
-.dragon {
+.dragon-b {
     color: white;
     background-color: #6f35fc;
 }
 
-.siniestro {
+.siniestro-b {
     color: white;
     background-color: #705746;
 }
 
-.hada {
+.hada-b {
     color: white;
     background-color: #d685ad;
 }
+ */
 
 
-/* 
 .normal {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #a8a77a, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #a8a77a;
+    }
 }
 
 .lucha {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #c22e28, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #c22e28;
+    }
 }
 
 .volador {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #a98ff3, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #a98ff3;
+    }
 }
 
 .veneno {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #a33ea1, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #a33ea1;
+    }
 }
 
 .tierra {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #e2bf65, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #e2bf65;
+    }
 }
 
 .roca {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #b6a136, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #b6a136;
+    }
 }
 
 .bicho {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #a6b91a, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #a6b91a;
+    }
 }
 
 .fantasma {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #735797, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #735797;
+    }
 }
 
 .acero {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #b7b7ce, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #b7b7ce;
+    }
 }
 
 .fuego {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #ee8130, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #ee8130;
+    }
 }
 
 .agua {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #6390f0, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #6390f0;
+    }
 }
 
 .planta {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #7ac74c, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #7ac74c;
+    }
 }
 
 .electrico {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #f7d02c, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #f7d02c;
+    }
 }
 
 .psiquico {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #f95587, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #f95587;
+    }
 }
 
 .hielo {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #96d9d6, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #96d9d6;
+    }
 }
 
 .dragon {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #6f35fc, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #6f35fc;
+    }
 }
 
 .siniestro {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #705746, #ffffff);
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #705746;
+    }
 }
 
 .hada {
-    color: white;
+    color: rgb(77, 76, 76);
     background-image: linear-gradient(to bottom, #d685ad, #ffffff);
-} */
+    transition: all ease-in 200ms;
+
+    &:hover {
+        background-image: none;
+        color: white;
+        background-color: #d685ad;
+    }
+}

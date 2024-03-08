@@ -4,6 +4,10 @@ import useTypesPokemon from "../../hooks/useTypesPokemon"
 export const FilterContent = () => {
 
     const { tiposEsp } = useTypesPokemon()
+    
+    const handleClick = () => {
+        
+    }
 
     if (tiposEsp.length === 0) {
         return (
@@ -11,15 +15,10 @@ export const FilterContent = () => {
         )
     }
 
-    function removerTildes(texto) {
-        return texto.normalize("NFD").replace(/[\u0300-\u036f]/g, "");
-    }
-
-    console.log(tiposEsp[12]);
-    console.log(removerTildes(tiposEsp[12]));
+    
 
     return (
-        <div className="flex justify-center">
+        <div className="flex justify-center mt-10">
             <div className="grid grid-cols-6 grid-rows-3 gap-4">
                 {
                     tiposEsp.map((tipo, index) => (

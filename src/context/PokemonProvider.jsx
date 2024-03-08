@@ -1,5 +1,6 @@
 import { createContext, useState, useEffect } from "react";
 import { dataUrlPokemon } from '../services/pokemon.services';
+import { filterTypes } from "../services/typesPokemon.services";
 
 const PokemonsContext = createContext();
 
@@ -19,7 +20,15 @@ const PokemonsProvider = ({ children }) => {
         }
     };
 
-    
+    const filteredPokeForType = async (tipo) => {
+        try {
+            
+            const data = await filterTypes(tipo)
+            console.log(data);
+        } catch (error) {
+            setError("Ocurrió un error al cargar los Pokémon");
+        }
+    }
 
     useEffect(() => {
         allPokemons();
@@ -30,6 +39,7 @@ const PokemonsProvider = ({ children }) => {
         loading,
         error,
         allPokemons,
+        filteredPokeForType
     };
 
     return (

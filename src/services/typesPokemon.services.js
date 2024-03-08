@@ -1,6 +1,5 @@
 import axios from 'axios'
 import { dataUrlPokemon } from './pokemon.services'
-import { useEffect } from 'react'
 
 const URL = "https://pokeapi.co/api/v2/type"
 
@@ -13,11 +12,13 @@ const allTypesPokemon = async () => {
     }
 }
 
-const typesPokemons = async () => {
+const filterTypes = async (tipo1) => {
     try {
-        const pokemons = await dataUrlPokemon()
+        const { data } = await axios.get(URL + "/" + tipo1)
+        return data
+
     } catch (error) {
-        console.log(error.menssage);
+        console.log(error);
     }
 }
 
@@ -36,4 +37,4 @@ const typesEnEspaniol = async () => {
     }
 }
 
-export { typesPokemons, allTypesPokemon, typesEnEspaniol }
+export { filterTypes, allTypesPokemon, typesEnEspaniol }

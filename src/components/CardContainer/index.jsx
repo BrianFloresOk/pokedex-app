@@ -18,12 +18,15 @@ export function CardContainer() {
     }
 
     return (
-        <div className="flex justify-center flex-wrap gap-9 gap-y-12">
-            {
-                pokemons.map((pokemon, index) => (
-                    <Card key={index} pokemon={pokemon}/>
-                ))
-            }
+        <div className="mb-10 pt-7">
+            <h2 className="my-10 text-center font-bold text-2xl">Todos los pokémons</h2>
+            <div className="flex justify-center flex-wrap gap-9 gap-y-12">
+                {
+                    pokemons.map((pokemon, index) => (
+                        <Card key={index} pokemon={pokemon} />
+                    ))
+                }
+            </div>
         </div>
     )
 }
